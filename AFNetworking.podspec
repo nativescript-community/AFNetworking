@@ -25,7 +25,6 @@ Pod::Spec.new do |s|
   s.resource_bundles = {'AFNetworking' => ['Framework/PrivacyInfo.xcprivacy']}
   # s.resources = ['Framework/PrivacyInfo.xcprivacy']
 
-  s.resources = ['Framework/PrivacyInfo.xcprivacy']
 
   s.subspec 'Serialization' do |ss|
     ss.source_files = 'AFNetworking/AFURL{Request,Response}Serialization.{h,m}'
@@ -64,7 +63,7 @@ Pod::Spec.new do |s|
     ## 隐私清单
     # ss.resource_bundles = {'AFNetworking' => ['Framework/PrivacyInfo.xcprivacy']}
     # s.resources = ['Framework/PrivacyInfo.xcprivacy']
-    
+
   end
 
   s.subspec 'UIKit' do |ss|
