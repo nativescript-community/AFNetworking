@@ -49,6 +49,9 @@ Pod::Spec.new do |s|
     ss.dependency 'AFNetworking/Security'
 
     ss.source_files = 'AFNetworking/AF{URL,HTTP}SessionManager.{h,m}', 'AFNetworking/AFCompatibilityMacros.h'
+
+    ## 隐私清单
+    ss.resource_bundles = {'NSURLSession' => ['Framework/PrivacyInfo.xcprivacy']}
   end
 
   s.subspec 'UIKit' do |ss|
