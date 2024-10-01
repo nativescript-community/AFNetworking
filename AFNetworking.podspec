@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
 
   ## 隐私清单
-  #s.resource_bundles = {'AFNetworking' => ['Framework/PrivacyInfo.xcprivacy']}
+  s.resource_bundles = {'AFNetworking' => ['Framework/PrivacyInfo.xcprivacy']}
   # s.resources = ['Framework/PrivacyInfo.xcprivacy']
 
   s.resources = ['Framework/PrivacyInfo.xcprivacy']
@@ -63,7 +63,7 @@ Pod::Spec.new do |s|
 
     ## 隐私清单
     # ss.resource_bundles = {'AFNetworking' => ['Framework/PrivacyInfo.xcprivacy']}
-    s.resources = ['Framework/PrivacyInfo.xcprivacy']
+    # s.resources = ['Framework/PrivacyInfo.xcprivacy']
     
   end
 
