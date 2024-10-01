@@ -31,14 +31,14 @@ Pod::Spec.new do |s|
     ss.source_files = 'AFNetworking/AFURL{Request,Response}Serialization.{h,m}'
 
     ## 隐私清单
-    ss.resource_bundles = {'AFNetworking' => ['Framework/PrivacyInfo.xcprivacy']}
+    # ss.resource_bundles = {'AFNetworking' => ['Framework/PrivacyInfo.xcprivacy']}
   end
 
   s.subspec 'Security' do |ss|
     ss.source_files = 'AFNetworking/AFSecurityPolicy.{h,m}'
 
     ## 隐私清单
-    ss.resource_bundles = {'AFNetworking' => ['Framework/PrivacyInfo.xcprivacy']}
+    # ss.resource_bundles = {'AFNetworking' => ['Framework/PrivacyInfo.xcprivacy']}
   end
 
   s.subspec 'Reachability' do |ss|
@@ -49,7 +49,7 @@ Pod::Spec.new do |s|
     ss.source_files = 'AFNetworking/AFNetworkReachabilityManager.{h,m}'
 
     ## 隐私清单
-    ss.resource_bundles = {'AFNetworking' => ['Framework/PrivacyInfo.xcprivacy']}
+    # ss.resource_bundles = {'AFNetworking' => ['Framework/PrivacyInfo.xcprivacy']}
   end
 
   s.subspec 'NSURLSession' do |ss|
@@ -73,6 +73,6 @@ Pod::Spec.new do |s|
     ss.source_files = 'UIKit+AFNetworking'
 
     ## 隐私清单
-    ss.resource_bundles = {'AFNetworking' => ['Framework/PrivacyInfo.xcprivacy']}
+    # ss.resource_bundles = {'AFNetworking' => ['Framework/PrivacyInfo.xcprivacy']}
   end
 end
