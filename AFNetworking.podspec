@@ -23,9 +23,6 @@ Pod::Spec.new do |s|
 
   ## 隐私清单
   # s.resource_bundles = {'AFNetworking' => ['Framework/PrivacyInfo.xcprivacy']}
-  # s.resources = ['Framework/PrivacyInfo.xcprivacy']
-
-
   s.subspec 'Privacy' do |sub|
     sub.resource_bundles = {
         s.name => 'Framework/PrivacyInfo.xcprivacy'
@@ -44,12 +41,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Security' do |ss|
     ss.source_files = 'AFNetworking/AFSecurityPolicy.{h,m}'
-
-
     ss.dependency 'AFNetworking/Privacy'
-
-    ## 隐私清单
-    # ss.resource_bundles = {'AFNetworking' => ['Framework/PrivacyInfo.xcprivacy']}
   end
 
   s.subspec 'Reachability' do |ss|
@@ -58,12 +50,7 @@ Pod::Spec.new do |s|
     ss.tvos.deployment_target = '9.0'
 
     ss.source_files = 'AFNetworking/AFNetworkReachabilityManager.{h,m}'
-
-
     ss.dependency 'AFNetworking/Privacy'
-
-    ## 隐私清单
-    # ss.resource_bundles = {'AFNetworking' => ['Framework/PrivacyInfo.xcprivacy']}
   end
 
   s.subspec 'NSURLSession' do |ss|
@@ -77,8 +64,6 @@ Pod::Spec.new do |s|
 
     ## 隐私清单
     # ss.resource_bundles = {'AFNetworking' => ['Framework/PrivacyInfo.xcprivacy']}
-    # s.resources = ['Framework/PrivacyInfo.xcprivacy']
-
   end
 
   s.subspec 'UIKit' do |ss|
@@ -87,8 +72,5 @@ Pod::Spec.new do |s|
     ss.dependency 'AFNetworking/NSURLSession'
 
     ss.source_files = 'UIKit+AFNetworking'
-
-    ## 隐私清单
-    # ss.resource_bundles = {'AFNetworking' => ['Framework/PrivacyInfo.xcprivacy']}
   end
 end
