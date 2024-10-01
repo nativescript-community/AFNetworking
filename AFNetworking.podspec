@@ -61,7 +61,7 @@ Pod::Spec.new do |s|
     ss.source_files = 'AFNetworking/AF{URL,HTTP}SessionManager.{h,m}', 'AFNetworking/AFCompatibilityMacros.h'
 
     ## 隐私清单
-    # ss.resource_bundles = {'AFNetworking' => ['Framework/PrivacyInfo.xcprivacy']}
+    ss.resource_bundles = {'AFNetworking' => ['Framework/PrivacyInfo.xcprivacy']}
     # s.resources = ['Framework/PrivacyInfo.xcprivacy']
 
   end
