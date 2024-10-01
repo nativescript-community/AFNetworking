@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
 
   ## 隐私清单
-  s.resource_bundles = {'AFNetworking' => ['Framework/PrivacyInfo.xcprivacy']}
+  # s.resource_bundles = {'AFNetworking' => ['Framework/PrivacyInfo.xcprivacy']}
 
 
   s.subspec 'Serialization' do |ss|
